@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(40, 40, 40);
+}
+.box{
+    background-color: #fff;
+    height: fit-content;
+    max-height: 500px;
+    width:  fit-content;
+    padding: 20px 30px 20px 30px;
+    margin-top: 100px;
+    margin-left: 38%;
+    border-radius: 10px;
+}
+.box p{
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+.box input{
+    width: 200px;
+    height: 25px;
+    margin-bottom: 20px;
+}
+.box input:hover{
+    border-color: rgb(40, 40, 40) ;
+}
+.box button{
+    color: white;
+    background-color: rgb(64, 64, 215);
+    padding: 10px;
+   margin-left: 22px;
+   width: 150px;
+   border-radius: 20px;
+   border: 0;
+}
+.box button:hover{
+    color: rgb(64, 64, 215);
+    background-color: #b4b1b1;
+    font-weight: bolder;
+}
+.box img{
+    padding: 20px;
+    margin-left: 5px;
+    overflow: hidden;
+    transition: max-height 1s;
+    cursor: pointer;
+}
+.inp.show-img{
+    margin: 10px auto;
+    max-height: 300px;
+    border: 1px solid #d1d1d1d1;
+}
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
